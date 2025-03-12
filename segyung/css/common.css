@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-color: #458117;
+    --sub-color: #72a730;
+    --gray-color: #f5f5f5;
+}
