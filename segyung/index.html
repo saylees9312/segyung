@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- js -->
@@ -19,7 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
-    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
 
     <script src="./js/script.js"></script>
   </head>
@@ -27,6 +25,8 @@
     <div class="cursor"></div>
     <!-- s:header-->
     <header id="header">
+      <div class="header-bg"></div>
+      <div class="header-dim"></div>
       <div class="header-inner">
         <nav>
           <h1 class="logo">
@@ -194,31 +194,104 @@
               </svg>
             </a>
           </h1>
-          <ul class="gnb">
-            <li><a href="#">Company</a></li>
-            <li><a href="#">PR Center</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">R&D</a></li>
-            <li><a href="#">HR</a></li>
-            <li><a href="#">IR</a></li>
-            <li><a href="#">Sustainability</a></li>
-          </ul>
-          <div class="util-box">
-            <div class="global">
-              <button type="button" class="global-btn">
-                <i class="hidden">global</i>
-              </button>
-              <ul class="lang-list">
-                <li>korea</li>
-                <li>english</li>
-                <li>chinese</li>
+          <div class="menu">
+            <div class="gnb">
+              <div class="header-on-icon"></div>
+              <ul class="gnb-list">
+                <li>
+                  <a href="#">Company</a>
+                  <ul class="sub-menu sub-menu1">
+                    <li><a href="#">회사개요</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">경영이념</a></li>
+                    <li><a href="#">사업장안내</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">PR Center</a>
+                  <ul class="sub-menu sub-menu2">
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">SG news</a></li>
+                    <li><a href="#">홍보영상</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Business</a>
+                  <ul class="sub-menu sub-menu3">
+                    <li><a href="#">Foldable</a></li>
+                    <li><a href="#">Deco</a></li>
+                    <li><a href="#">Converting</a></li>
+                    <li><a href="#">B2C</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Technology</a>
+                  <ul class="sub-menu sub-menu4">
+                    <li><a href="#">재료 개발</a></li>
+                    <li><a href="#">소재 개발</a></li>
+                    <li><a href="#">디자인 기획</a></li>
+                    <li><a href="#">Pattern 설계 기술</a></li>
+                    <li><a href="#">Lamination</a></li>
+                    <li><a href="#">Coating 기술</a></li>
+                    <li><a href="#">증착 기술</a></li>
+                    <li><a href="#">인쇄 기술</a></li>
+                    <li><a href="#">금형 설계 제작 기술</a></li>
+                    <li><a href="#">정밀 가공</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">R&D</a>
+                  <ul class="sub-menu sub-menu5">
+                    <li><a href="#">R&D 소재</a></li>
+                    <li><a href="#">보유특허</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">HR</a>
+                  <ul class="sub-menu sub-menu6">
+                    <li><a href="#">인재상</a></li>
+                    <li><a href="#">인사제도</a></li>
+                    <li><a href="#">채용공고</a></li>
+                    <li><a href="#">지원서 수정</a></li>
+                    <li><a href="#">결과확인</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">IR</a>
+                  <ul class="sub-menu sub-menu7">
+                    <li><a href="#">IR 공고</a></li>
+                    <li><a href="#">재무 정보</a></li>
+                    <li><a href="#">주가 정보</a></li>
+                    <li><a href="#">공시 정보</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Sustainability</a>
+                  <ul class="sub-menu sub-menu8">
+                    <li><a href="#">ESG 경영</a></li>
+                    <li><a href="#">ESG 전략</a></li>
+                    <li><a href="#">ESG 정보공개</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
-            <div class="hamburger-btn">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="util-box">
+              <div class="global">
+                <button type="button" class="global-btn">
+                  <i class="hidden">global</i>
+                </button>
+                <ul class="lang-list">
+                  <li>korea</li>
+                  <li>english</li>
+                  <li>chinese</li>
+                </ul>
+              </div>
+              <div class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </nav>
@@ -243,9 +316,9 @@
                   <div class="visual-con-area">
                     <div class="visual-text-box">
                       <h2 class="hidden">main visual</h2>
-                      <p>Creative Thinking</p>
+                      <p class="move-left">Creative Thinking</p>
                       <p class="move-right">Innovative Value</p>
-                      <p>Segyung Hitech Co.,Ltd.</p>
+                      <p class="move-left">Segyung Hitech Co.,Ltd.</p>
                     </div>
                   </div>
                 </div>
@@ -259,9 +332,9 @@
                     <div class="visual-con-area">
                       <div class="visual-text-box">
                         <h2 class="hidden">main visual</h2>
-                        <p>미래를 여는 기술,</p>
+                        <p class="move-left">미래를 여는 기술,</p>
                         <p class="move-right">세경하이테크의</p>
-                        <p>CMFP Design Innovation</p>
+                        <p class="move-left">CMFP Design Innovation</p>
                       </div>
                     </div>
                   </div>
@@ -308,19 +381,19 @@
             </div>
             <div class="info-circle">
               <div class="info-link">
-                <a href="" class="circle">
+                <a href="#" class="circle">
                   <p>회사개요</p>
                   <p>Overview</p>
                 </a>
               </div>
               <div class="info-link">
-                <a href="" class="circle">
+                <a href="#" class="circle">
                   <p>회사연혁</p>
                   <p>History</p>
                 </a>
               </div>
               <div class="info-link">
-                <a href="" class="circle">
+                <a href="#" class="circle">
                   <p>주가정보</p>
                   <p>Investor Relations</p>
                 </a>
@@ -338,7 +411,7 @@
                 <li>
                   <dl>
                     <dt>임직원</dt>
-                    <dd>4300</dd>
+                    <dd>4,300</dd>
                     <dd>본사 · 베트남 · 중국 · 일본</dd>
                   </dl>
                 </li>
